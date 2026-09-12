@@ -1,0 +1,10 @@
+name: Self-hosted Runner Test
+on: [push]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test runner connection
+        run: echo "Runner is working!"
+
